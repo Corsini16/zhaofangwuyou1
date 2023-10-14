@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <title>找房无忧-登录</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/login.css" />
+    <link rel="stylesheet" href="./style/all.css">
+    <script src="./js/setRem.js"></script>
+    <script src="./js/myCookie.js"></script>
+</head>
+
+<body>
+
+    <div class="box">
+        <!--头部-->
+        <header>
+            <ul class="toubu">
+                <li><img src="./image/index/logo.jpg" alt=""></li>
+                <li><span><img src="./image/index/my.jpg" alt=""></span></li>
+                <li><span><img src="./image/index/xiazai.jpg" alt=""></span></li>
+            </ul>
+        </header>
+
+        <section class="rentalAddr">
+            <p><strong>首页</strong> > <span>找回密码</span></p>
+        </section>
+
+        <section class="registerForm login">
+            <form action="#">
+                <div class="customLogin active">
+                    <ul>
+                        <li class="mima">
+                            <input type="text" class="nummber2" placeholder="请输入手机号码" />
+                            <a id="getcode" href="#">发送验证码</a>
+                        </li>
+                        <li><input type="text" class="code" placeholder="请输入短信中的验证码" /></li>
+                        <li><input type="text" class="pwd1" placeholder="请输入新密码" /></li>
+                        <li><input type="text" class="pwd2" placeholder="请输入确认密码" /></li>
+                    </ul>
+                    <input class="registerBtn" value="提交" />
+
+                </div>
+            </form>
+        </section>
+
+    </div>
+</body>
+
+</html>
+<script>
+    var nummber2 = document.querySelector(".nummber2");
+    var getcode = document.querySelector("#getcode")
+
+    var code = document.querySelector(".code")
+    var pwd1 = document.querySelector(".pwd1");
+    var pwd2 = document.querySelector(".pwd2");
+    var registerBtn = document.querySelector(".registerBtn")
+    var num;
+    getcode.onclick = function () {
+        var time = 60;
+        num = (Math.random() * 9).toFixed(0) + (Math.random() * 9).toFixed(0) + (Math.random() * 9).toFixed(0) + (Math.random() * 9).toFixed(0)
+        getcode.disabled = true;
+        alert('验证码：' + num)
+        var timer = setInterval(function () {
+            time--;
+            getcode.innerHTML = time + ' 秒';
+            if (time == 0) {
+                clearInterval(timer);
+                time = 60;
+                getcode.disabled = false;
+                getcode.innerHTML = '发送验证码'
+            }
+        }, 1000)
+        return num;
+    }
+    var regnumber = /^1[345789][0-9]{9}$/;
+    var regpwd = /^(?=.*[a-zA-Z])(?=.*\d).+$/
+
+    registerBtn.onclick = function () {
+
+        var phone = regnumber.test(nummber2.value)
+        var password1 = regpwd.test(pwd1.value)
+        // var password = regpwd.test(code.value)
+        var vreify = num == code.value;
+        // var password2 = regpwd.test("pwd2.value")
+        var nummber = getCookie("phone");
+        if (phone && password1) {
+            if (nummber2.value == nummber) {
+                if (pwd1.value == pwd2.value) {
+                    setCookie('password', pwd1.value);
+                    alert('修改成功')
+                    window.open("./login.html", '_self')
+                } else {
+                    alert('两次密码输入不一样')
+                    pwd1.value = '';
+                    pwd2.value = '';
+                }
+            } else {
+                alert("手机号未注册")
+                nummber2.value = '';
+                code.value = '';
+                pwd1.value = '';
+                pwd2.value = '';
+            }
+
+        } else {
+            alert('手机号或验证码或密码错误！\n请重新输入')
+            nummber2.value = '';
+            code.value = '';
+            pwd1.value = '';
+            pwd2.value = '';
+        }
+
+    }
+
+
+
+
+</script>

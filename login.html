@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <title>找房无忧-登录</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/login.css" />
+    <link rel="stylesheet" href="./style/all.css">
+    <script src="./js/login.js"></script>
+    <script src="./js/setRem.js"></script>
+    <script src="./js/myCookie.js"></script>
+</head>
+
+<body>
+
+    <div class="box">
+        <!--头部-->
+        <header>
+            <ul class="toubu">
+                <li><img src="./image/index/logo.jpg" alt=""></li>
+                <li><span><img src="./image/index/my.jpg" alt=""></span></li>
+                <li><span><img src="./image/index/xiazai.jpg" alt=""></span></li>
+            </ul>
+        </header>
+
+        <section class="rentalAddr">
+            <p><strong>首页</strong> > <span>我的</span> > <span>登录</span></p>
+        </section>
+
+        <section class="registerForm login">
+            <form action="#">
+                <ul class="title">
+                    <li class="tab active">普通登录</li>
+                    <li class="tab">验证码快捷登录</li>
+                </ul>
+                <div class="customLogin active">
+                    <ul>
+                        <li>
+                            <input class="phone1" type="text" placeholder="请输入手机号码" />
+                        </li>
+                        <li><input class="psd" type="text" placeholder="请输入密码" /></li>
+                    </ul>
+                    <input value="立即登录" class="login1" />
+
+                    <div class="tiShi">
+                        <a href="#">立即注册</a>
+                        <a href="#">忘记密码</a>
+                    </div>
+                </div>
+
+                <div class="customLogin ">
+                    <ul>
+                        <li class="mima">
+                            <input class="phone2" type="text" placeholder="请输入手机号码" />
+                            <a id="facode" href="#">发送验证码</a>
+                        </li>
+                        <li><input class="code" type="text" placeholder="请输入短信中的验证码" /></li>
+                    </ul>
+                    <input class="login2" value="验证并登录" />
+                    <div class="tiShi">
+                        <a href="#">立即注册</a>
+                        <a href="#">忘记密码</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </div>
+    <!-- <script src="js/rem.js"></script> -->
+    <!-- <script src="js/zepto.js"></script> -->
+
+</body>
+
+</html>
+<script>
+    //    切换普通登录和快速登录
+    //    var customLogin=document.querySelector(".customLogin");
+    var customLogin = document.getElementsByClassName("customLogin");
+    var tab = document.getElementsByClassName("tab");
+    console.log(tab);
+    for (var i = 0; i < tab.length; i++) {
+        tab[i].setAttribute('index', i);
+        tab[i].onclick = function () {
+            var index = this.getAttribute('index');
+            // console.log(index);
+            for (var j = 0; j < tab.length; j++) {
+                customLogin[j].className = 'customLogin';
+                customLogin[index].className = 'customLogin active';
+            }
+            // 再次使用排他法  把对应a 对应的html进行显示隐藏
+            for (var k = 0; k < tab.length; k++) {
+                tab[k].className = "tab"
+                tab[index].className = "tab active"
+            }
+        }
+    }
+    // var code=document.getElementById("code").firstChild.nodeValue;
+    // console.log(code);
+    var tiShi = document.querySelector(".tiShi");
+    var lookfor = tiShi.children[1]
+    lookfor.onclick = function () {
+        window.open("./lookfor.html", "_self")
+    }
+    // 跳转注册
+    var lookfor1 = tiShi.children[0]
+    lookfor1.onclick = function () {
+        window.open("./register.html", "_self")
+    }
+</script>

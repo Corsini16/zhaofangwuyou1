@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京租房</title>
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/search.css">
+    <script src="./js/setRem.js"></script>
+    <!-- <script src="./js/search.js"></script> -->
+</head>
+<style>
+    .rentalAddr{
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+        text-indent: 1rem;
+        background-color: white;
+        margin-bottom: 1rem;
+    }
+</style>
+<body>
+    <div class="box">
+        <header>
+            <ul class="toubu">
+                <li><img src="./image/index/logo.jpg" alt=""></li>
+                <li><span><img src="./image/index/my.jpg" alt=""></span></li>
+                <li><span><img src="./image/index/xiazai.jpg" alt=""></span></li>
+            </ul>
+        </header>
+        <section class="rentalAddr">
+            <p><strong>首页</strong> > <span>北京租房</span></p>
+        </section>
+        <div class="search">
+            <input type="search" placeholder="输入小区或商圈名称">
+            <span><img src="./image/SecondHandList/search_03.png" alt=""></span>
+        </div>
+        <div class="hide"></div>
+        <div class="list ">
+            <ul class="list_u">
+                <li class="ontou">区域<span class="sanjiao"></span>
+
+                </li>
+                <li class="ontou">价格 <span class="sanjiao"></span>
+
+
+                </li>
+                <li class="ontou">房型 <span class="sanjiao"></span>
+
+                </li>
+                <li class="ontou">更多 <span class="sanjiao"></span>
+
+                </li>
+            </ul>
+        </div>
+        <div class="liebiao ">
+            <!--区域-->
+            <li class="area">
+                <div class="title">
+                    <p class="active">区域</p>
+                    <p>地铁</p>
+                </div>
+                <div class="hideList">
+                    <ul>
+                        <li><a href="#">附近</a></li>
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">不限</a></li>
+                        <li><a href="#">安贞</a></li>
+                        <li><a href="#">朝阳</a></li>
+                        <li><a href="#">奥林匹克公园</a></li>
+                        <li><a href="#">海淀</a></li>
+                        <li><a href="#">百子湾</a></li>
+                        <li><a href="#">昌平</a></li>
+                        <li><a href="#">北工大</a></li>
+                        <li><a href="#">丰台</a></li>
+                        <li><a href="#">北苑</a></li>
+                        <li><a href="#">石景山</a></li>
+                        <li><a href="#">CBD</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- 价格 -->
+            <li class="price ">
+                <ul>
+                    <li>不限</li>
+                    <li>100万以下</li>
+                    <li>100万-150万</li>
+                    <li>150万-200万</li>
+                    <li>200万-250万</li>
+                    <li>250万-300万</li>
+                    <li>自定义价格</li>
+                </ul>
+            </li>
+            <!-- 房型 -->
+            <li class="house">
+                <ul>
+                    <li>不限</li>
+                    <li>
+                        1室 <span></span>
+                    </li>
+                    <li>
+                        2室 <span class="active"></span>
+                    </li>
+                    <li>
+                        3室 <span></span>
+                    </li>
+                    <li>
+                        4室 <span></span>
+                    </li>
+                    <li>
+                        5室 <span></span>
+                    </li>
+                    <li><a class="btnOK" href="#">确定</a></li>
+                </ul>
+            </li>
+
+            <!--更多-->
+            <li class="more">
+                <ul>
+                    <li>
+                        <h3>区域</h3>
+                        <ul class="childList">
+                            <li>南</li>
+                            <li>南北</li>
+                            <li>东</li>
+                            <li>西</li>
+                            <li>北</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>面积（平方）</h3>
+                        <ul class="childList">
+                            <li>50以下</li>
+                            <li>50-70</li>
+                            <li>70-90</li>
+                            <li>90-110</li>
+                            <li>110-130</li>
+                            <li>130-150</li>
+                            <li>150-200</li>
+                            <li>200以上</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>标签</h3>
+                        <ul class="childList">
+                            <li>学区房</li>
+                            <li>地铁房</li>
+                            <li>不限购</li>
+                            <li>满两年</li>
+                            <li>满五唯一</li>
+                            <li>降价</li>
+                            <li>新上</li>
+                            <li>独家</li>
+                            <li>有钥匙</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>楼龄</h3>
+                        <ul class="childList">
+                            <li>5年以内</li>
+                            <li>10年以内</li>
+                            <li>10-20年</li>
+                            <li>20年以上</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>楼层</h3>
+                        <ul class="childList">
+                            <li>低楼层</li>
+                            <li>中楼层</li>
+                            <li>高楼层</li>
+                        </ul>
+                    </li>
+                    <li class="clear"><a href="#">清空条件</a></li>
+                    <li class="btnOK"><a href="#">确定</a></li>
+                </ul>
+            </li>
+        </div>
+        <div class="f_content">
+            <ul>
+                <li>
+                    <div class="f_left"><img src="./image/index/img1.jpg" alt=""></div>
+                    <div class="f_right">
+                        <b>西便门外大街2室1厅89平</b>
+                        <p><span>南北 高楼层</span></p>
+                        <p>签约价格:13244元 <span> &nbsp; 905万</span></p>
+                        <a><span>签约日期:2015年11月10日</span> &nbsp;
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_left"><img src="./image/index/img1.jpg" alt=""></div>
+                    <div class="f_right">
+                        <b>西便门外大街2室1厅89平</b>
+                        <p><span>南北 高楼层</span></p>
+                        <p>签约价格:13244元 <span> &nbsp; 905万</span></p>
+                        <a><span>签约日期:2015年11月10日</span> &nbsp;
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_left"><img src="./image/index/img1.jpg" alt=""></div>
+                    <div class="f_right">
+                        <b>西便门外大街2室1厅89平</b>
+                        <p><span>南北 高楼层</span></p>
+                        <p>签约价格:13244元 <span> &nbsp; 905万</span></p>
+                        <a><span>签约日期:2015年11月10日</span> &nbsp;
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <footer>
+            <ul class="dibu-top">
+                <li>北京找房无忧 > 首页</li>
+            </ul>
+            <ul class="dibu-content">
+                <li><img src="./image/index/apple.png" alt="">
+                    <span>iphone
+                        <br>
+                        客户端
+                    </span>
+
+                </li>
+                <li><img src="./image/index/android.png" alt="">
+                    <span>Android
+                        <br>
+                        客户端
+                    </span>
+                </li>
+            </ul>
+            <ul class="dibu-bottom">
+                <p>北京找房无忧房地产经纪公司</p>
+                <p>网络经营许可证京ICP备20160812号</p>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    var hide = document.querySelector(".hide")
+    var list = document.querySelector(".list");
+
+    var area = document.querySelector(".area");
+    var price = document.querySelector(".price");
+    var house = document.querySelector(".house");
+    var more = document.querySelector(".more");
+    var sanjiao = document.getElementsByClassName("sanjiao")
+    // console.log(sanjiao);
+    var y_sanjiao = document.getElementsByClassName("y_sanjiao")
+    // console.log(sanjiao.length);
+    var ontou = document.getElementsByClassName("ontou");
+    // console.log(ontou);
+    var area = document.getElementsByClassName("area")[0];
+    for (i = 0; i < ontou.length; i++) {
+        // console.log(ontou);
+        // sanjiao[i].className = "sanjiao"
+        // y_sanjiao[i].className = "sanjiao"
+
+        ontou[i].setAttribute('index', i);
+        ontou[i].onclick = function (e) {
+            e.stopPropagation();
+            var ind = this.getAttribute('index');
+            list.className = "list list_active";
+            if (ind == 0) {
+                area.className = "area liebiao_active"
+                price.className = "price"
+                hide.style.display = "block"
+                house.className = "house"
+            } else {
+            }
+            if (ind == 1) {
+                price.className = "price liebiao_active"
+                area.className = "area"
+                hide.style.display = "block"
+                house.className = "house"
+            } else {
+                price.className = "price"
+            }
+
+            if (ind == 2) {
+                house.className = "house liebiao_active"
+                area.className = "area"
+                hide.style.display = "block"
+            } else {
+                house.className = "house"
+            }
+
+            if (ind == 3) {
+
+                more.className = "more liebiao_active"
+                area.className = "area"
+                hide.style.display = "block"
+            } else {
+                more.className = "more"
+            }
+            // console.log(sanjiao[ind]);
+
+            // sanjiao[ind].className = "y_sanjiao"
+
+            for (var k = 0; k < ontou.length; k++) {
+                ontou[k].style.color = '#666666';
+                ontou[ind].style.color = "#FF8A00"
+                ontou[k].firstElementChild.className = "sanjiao"
+                ontou[ind].firstElementChild.className = "y_sanjiao"
+
+            }
+
+
+
+        }
+    }
+
+
+
+    hide.onclick = function () {
+        list.className = "list";
+        hide.style.display = "none"
+        area.className = "area"
+        price.className = "price"
+        house.className = "house"
+        more.className = "more"
+
+    }
+
+
+    // /*制作三角形箭头*/
+    // .secondList .list h2 span{
+    //     border-top: 5px solid #ccc;
+    //     border-right: 5px solid transparent;
+    //     border-bottom: 5px solid transparent;
+    //     border-left: 5px solid transparent;
+    //     position: absolute;
+    //     top: 0.6rem;
+    //     right: -1.4rem;
+    // }
+
+    // /*添加active类名就可以改变小箭头的方向和颜色*/
+    // .secondList .list h2 .active span{
+    //     border-top: 5px solid transparent;
+    //     border-right: 5px solid transparent;
+    //     border-bottom: 5px solid #ff8a00;
+    //     border-left: 5px solid transparent;
+    //     top: 0.2rem;
+    // }
+    // .secondList .list h2 .active{
+    //     color: #ff8a00;
+    // }
+    // /*遮罩层*/
+    // .hide{
+    //     width: 100%;
+    //     height: 100%;
+    //     background: rgba(0, 0, 0, 0.5);
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 2;
+    //     display: none;  /*接口*/
+    // }
+</script>

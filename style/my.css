@@ -1,0 +1,34 @@
+a{
+    color: #a3a3a3;
+}
+.daohangtiao{
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.2rem;
+    width: 100%;
+    padding-left: 2rem;
+}
+.tuichu1{
+    width: 90%;
+    margin-left: 5%;
+}
+.tuichu1 input{
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    margin-top: 2rem;
+    color: #E77A08;
+    font-size: 1.4rem;
+}
+.login{
+    border: none !important;
+    margin-left: 0%;
+    padding: 0;
+    left: 11rem !important;
+}
+.tuichu{
+
+}

@@ -1,0 +1,313 @@
+.banner {
+    width: 100%;
+    /* height: 100rem; */
+    /* background-color: aqua; */
+}
+
+.box {
+    background-color: #F5F5F5;
+}
+
+.swiper {
+    /* width: 60rem; */
+    height: 20rem;
+}
+
+.swiper img {
+    width: 100%;
+    height: 100%;
+    /* background-size:cover; */
+    /* display: block; */
+}
+
+.jieshao {
+    padding: 2rem 2.5rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.jieshao p:nth-of-type(1) {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.jieshao p:nth-of-type(1) span {
+    color: red;
+}
+
+.jieshao p:nth-of-type(1) span:nth-of-type(2) {
+    display: inline-block;
+    width: 1.5rem;
+    margin-left: 8rem;
+}
+
+.jieshao p:nth-of-type(1) span:nth-of-type(2) img {
+    width: 100%;
+    display: block;
+}
+
+.jieshao p:nth-of-type(2) {
+    font-size: 1.4rem;
+    color: #a3a3a3;
+    margin: 1rem 0;
+}
+
+.jieshao p:nth-of-type(3) span {
+    display: inline-block;
+    background-color: #DEE9F0;
+    margin-right: 1rem;
+    padding: .5rem;
+}
+
+.list_ {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.list_ ul {
+    width: 100%;
+}
+
+.list_ ul:nth-of-type(1) li {
+    display: flex;
+    font-size: 1.6rem;
+    /* height: 2.5rem; */
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #a3a3a3;
+    padding-top: 1.5rem;
+}
+
+.list_ ul:nth-of-type(1) li p {
+    width: 50%;
+}
+
+.list_ ul:nth-of-type(2) li {
+    display: flex;
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #a3a3a3;
+    padding-top: 1.5rem;
+}
+
+.list_ ul:nth-of-type(2) p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.tese {
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.tese>p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* 1 */
+.tese {
+    color: #FF8A00;
+    border-bottom: 1px solid #a3a3a3;
+    /* margin-bottom: 2rem; */
+}
+
+/* 列表 */
+
+.f_content {
+    width: 100%;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    /* background-color: white; */
+}
+
+.f_content ul li {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 2rem 0; */
+    border-bottom: 1px solid red;
+    padding: 2rem 0;
+}
+
+.f_content ul li:nth-of-type(2) {
+    border: none;
+}
+
+.f_left {
+    width: 30%;
+    /* background-color: #FF8A00; */
+}
+
+.f_left>img {
+    width: 100%;
+    display: block;
+}
+
+.f_right {
+    width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* background-color: #562929; */
+}
+
+.f_right b {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.f_right p:nth-of-type(1) {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem 0;
+
+}
+
+.f_right p {
+    /* margin-left: 2.5rem; */
+    margin: .5rem 0;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.f_right p:nth-of-type(2) span {
+    padding: 2px;
+    color: #B7B6BC;
+    font-weight: 600;
+    background-color: #b3d4ea;
+}
+
+.f_right p:nth-of-type(2) {
+    color: #a3a3a3;
+}
+
+.f_right a span {
+    display: inline-block;
+    /* padding: 3px; */
+    background-color: #DEE9F0;
+
+    color: #a3a3a3;
+}
+
+.f_content {
+    background-color: white;
+}
+
+/* 推荐房源 */
+
+.f_content2 {
+    width: 100%;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.f_content2 ul li {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 2rem 0; */
+    border-bottom: 1px solid #a3a3a3;
+    /* padding: 2rem 0; */
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+/* 
+.f_content2 ul li:last-child {
+    border: none;
+} */
+
+.f_left2 {
+    width: 30%;
+    /* background-color: #FF8A00; */
+}
+
+.f_left2>img {
+    width: 100%;
+    display: block;
+}
+
+.f_right2 {
+    width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* background-color: #562929; */
+}
+
+.f_right2 b {
+    font-size: 2rem;
+}
+
+.f_right2 p:nth-of-type(1) {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.f_right2 p {
+    /* margin-left: 2.5rem; */
+    margin: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_right2 p:nth-of-type(1) span:nth-of-type(2) {
+    color: #FF8A00;
+}
+
+.f_right2 p:nth-of-type(2) {
+    color: #a3a3a3;
+}
+
+.f_right2 a span {
+    display: inline-block;
+    padding: 3px;
+    background-color: #F4F7F9;
+    color: #A8AFBC;
+}
+
+/* dingwei  triangle */
+.triangl {
+    background-color: #F2F2F2;
+    position: absolute;
+    width: 90%;
+    height: 3rem;
+    left: 10%;
+    bottom: 1rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    text-indent: 1rem;
+    /* position: relative; */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid #F2F2F2;
+    position: absolute;
+    left: 5%;
+    bottom: 3rem;
+}
+
+/* 更多 */
+.daoer {
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: white;
+}
+
+.map {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+}
+
+.map img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

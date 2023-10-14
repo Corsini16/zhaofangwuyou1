@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    max-width: 600px;
+    min-width: 230px;
+    margin: 0 auto;
+}
+/* 头部 */
+header {
+    background-color: #FF8A00;
+    padding: .2rem 2rem .2rem 4rem;
+    box-sizing: border-box;
+    height: 5rem;
+}
+
+.toubu {
+    display: flex;
+    align-items: center;
+    height: 4.8rem;
+}
+
+.toubu li {
+    list-style: none;
+}
+
+.toubu li:nth-of-type(1) {
+    width: 25rem;
+}
+
+.toubu li>img {
+    width: 50%;
+}
+
+.toubu li span {
+    display: block;
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+.toubu li span img {
+    display: block;
+    height: 100%;
+}
+
+
+/* 底部 */
+footer {
+    background-color: #2F3130;
+    width: 100%;
+    /* width: 60rem; */
+    /* height: 12rem; */
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    color: #939494;
+
+}
+
+.dibu-top {
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.dibu-top li {
+    /* display: none; */
+    /* color: #939494; */
+    color: #939494;
+    height: 3rem;
+    /* line-height: 3rem; */
+    border-bottom: 1px solid #575656;
+}
+
+.dibu-content {
+    width: 100%;
+    /* background-color: aqua; */
+    height: 6rem;
+    display: flex;
+    font-size: 1.4rem;
+
+}
+
+.dibu-content li {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.dibu-content li img {
+    width: 18%;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+.dibu-bottom {
+    text-align: center;
+    font-size: 1.4rem;
+}
+

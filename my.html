@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>找房无忧-我的页面</title>
+    <script src="./js/setRem.js"></script>
+    <link rel="stylesheet" href="./style/index_login.css"/>
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/my.css">
+    <script src="./js/myCookie.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="box">
+
+    <header>
+        <ul class="toubu">
+            <li><img src="./image/index/logo.jpg" alt=""></li>
+            <li><span><img src="./image/index/my.jpg" alt=""></span></li>
+            <li><span><img src="./image/index/xiazai.jpg" alt=""></span></li>
+        </ul>
+  </header>
+    <div class="daohangtiao">
+        <li>
+            <span><b>首页</b></span>><span>我的</span>
+        </li>
+    </div>
+    <section class="head">
+        <img class="bg" src="image/my/bg1.png" alt=""/>
+      
+        <img class="logo" src="image/my/urse2.png" alt=""/>
+        <a class="login" href="#">欢迎你,<span class="id"></span></a>
+    </section>
+    
+    <section class="userList">
+        <ul>
+            <li class="my_fangyuan">
+                <a href="#">我关注的房源</a>
+            </li>
+            <li>
+                <a class="my_xiaoqu" href="#">我关注的小区</a>
+            </li>
+          
+            <li>
+                <a href="#">我的看房记录</a>
+            </li>
+        </ul>
+    </section>
+    <section class="tuichu1">
+        <input class="tuichu" value="退出登录" />
+        </section>
+</div>
+
+
+<script src="js/rem.js"></script>
+</body>
+</html>
+<script>
+    var id=document.querySelector(".id");
+    var my_fangyuan=document.querySelector(".my_fangyuan")
+    my_fangyuan.onclick=function(){
+        window.open("./fanngyuan.html","_self")
+    }
+    var my_xiaoqu=document.querySelector(".my_xiaoqu");
+    my_xiaoqu.onclick=function(){
+        window.open("./xiaoqu.html","_self")
+    }
+    // console.log(id);
+    id.innerHTML=getCookie("phone");
+    var tuichu=document.querySelector(".tuichu");
+    tuichu.onclick=function(){
+        window.open("./index_login.html")
+        removeCookie("phone")
+        removeCookie("password")
+    }
+
+</script>
